@@ -4,7 +4,7 @@ package tools
 import (
 	"sync"
 
-	"github.com/user/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
 )
 
 // Registry implements interfaces.ToolRegistry with thread-safe operations.

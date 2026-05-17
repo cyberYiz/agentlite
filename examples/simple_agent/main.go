@@ -14,9 +14,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/user/agent-sdk/pkg/agent"
-	"github.com/user/agent-sdk/pkg/llm/openai"
-	"github.com/user/agent-sdk/pkg/memory"
+	"github.com/cyberYiz/agent-sdk/pkg/agent"
+	"github.com/cyberYiz/agent-sdk/pkg/llm/openai"
+	"github.com/cyberYiz/agent-sdk/pkg/memory"
 )
 
 func main() {

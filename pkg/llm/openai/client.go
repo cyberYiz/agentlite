@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/user/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
 )
 
 const (
@@ -230,22 +230,22 @@ func (c *Client) chat(ctx context.Context, prompt string, tools []interfaces.Too
 // --- OpenAI API types ---
 
 type chatRequest struct {
-	Model          string           `json:"model"`
-	Messages       []chatMessage    `json:"messages"`
-	Temperature    *float64         `json:"temperature,omitempty"`
-	TopP           *float64         `json:"top_p,omitempty"`
-	MaxTokens      int              `json:"max_tokens,omitempty"`
-	Tools          []toolDef        `json:"tools,omitempty"`
-	ToolChoice     string           `json:"tool_choice,omitempty"`
-	ResponseFormat *responseFormat  `json:"response_format,omitempty"`
-	Stream         bool             `json:"stream,omitempty"`
+	Model          string          `json:"model"`
+	Messages       []chatMessage   `json:"messages"`
+	Temperature    *float64        `json:"temperature,omitempty"`
+	TopP           *float64        `json:"top_p,omitempty"`
+	MaxTokens      int             `json:"max_tokens,omitempty"`
+	Tools          []toolDef       `json:"tools,omitempty"`
+	ToolChoice     string          `json:"tool_choice,omitempty"`
+	ResponseFormat *responseFormat `json:"response_format,omitempty"`
+	Stream         bool            `json:"stream,omitempty"`
 }
 
 type chatMessage struct {
-	Role       string      `json:"role"`
-	Content    string      `json:"content,omitempty"`
-	ToolCalls  []toolCall  `json:"tool_calls,omitempty"`
-	ToolCallID string      `json:"tool_call_id,omitempty"`
+	Role       string     `json:"role"`
+	Content    string     `json:"content,omitempty"`
+	ToolCalls  []toolCall `json:"tool_calls,omitempty"`
+	ToolCallID string     `json:"tool_call_id,omitempty"`
 }
 
 type toolCall struct {
@@ -276,10 +276,10 @@ type responseFormat struct {
 }
 
 type chatResponse struct {
-	ID      string    `json:"id"`
-	Model   string    `json:"model"`
-	Choices []choice  `json:"choices"`
-	Usage   *usage    `json:"usage,omitempty"`
+	ID      string   `json:"id"`
+	Model   string   `json:"model"`
+	Choices []choice `json:"choices"`
+	Usage   *usage   `json:"usage,omitempty"`
 }
 
 type choice struct {

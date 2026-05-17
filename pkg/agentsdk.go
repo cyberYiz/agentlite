@@ -5,17 +5,17 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/user/agent-sdk/pkg/agent"
-	"github.com/user/agent-sdk/pkg/config"
-	"github.com/user/agent-sdk/pkg/interfaces"
-	"github.com/user/agent-sdk/pkg/llm/openai"
-	"github.com/user/agent-sdk/pkg/logging"
-	"github.com/user/agent-sdk/pkg/memory"
-	"github.com/user/agent-sdk/pkg/skills"
-	"github.com/user/agent-sdk/pkg/skills/builtin"
-	"github.com/user/agent-sdk/pkg/tools"
-	"github.com/user/agent-sdk/pkg/tools/calculator"
-	"github.com/user/agent-sdk/pkg/tools/websearch"
+	"github.com/cyberYiz/agent-sdk/pkg/agent"
+	"github.com/cyberYiz/agent-sdk/pkg/config"
+	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agent-sdk/pkg/llm/openai"
+	"github.com/cyberYiz/agent-sdk/pkg/logging"
+	"github.com/cyberYiz/agent-sdk/pkg/memory"
+	"github.com/cyberYiz/agent-sdk/pkg/skills"
+	"github.com/cyberYiz/agent-sdk/pkg/skills/builtin"
+	"github.com/cyberYiz/agent-sdk/pkg/tools"
+	"github.com/cyberYiz/agent-sdk/pkg/tools/calculator"
+	"github.com/cyberYiz/agent-sdk/pkg/tools/websearch"
 )
 
 // DefaultAgent creates an agent with sensible defaults using environment config.

@@ -16,10 +16,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/user/agent-sdk/pkg/agent"
-	"github.com/user/agent-sdk/pkg/llm/openai"
-	"github.com/user/agent-sdk/pkg/memory"
-	"github.com/user/agent-sdk/pkg/skills"
+	"github.com/cyberYiz/agent-sdk/pkg/agent"
+	"github.com/cyberYiz/agent-sdk/pkg/llm/openai"
+	"github.com/cyberYiz/agent-sdk/pkg/memory"
+	"github.com/cyberYiz/agent-sdk/pkg/skills"
 )
 
 func main() {

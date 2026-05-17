@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/user/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
 )
 
 // Tool implements interfaces.Tool for basic arithmetic.
@@ -19,8 +19,10 @@ func New() *Tool { return &Tool{} }
 // Ensure Tool implements interfaces.Tool
 var _ interfaces.Tool = (*Tool)(nil)
 
-func (t *Tool) Name() string        { return "calculator" }
-func (t *Tool) Description() string { return "Performs basic arithmetic: addition, subtraction, multiplication, division. Input expression like '2 + 3 * 4' (supports +, -, *, /)." }
+func (t *Tool) Name() string { return "calculator" }
+func (t *Tool) Description() string {
+	return "Performs basic arithmetic: addition, subtraction, multiplication, division. Input expression like '2 + 3 * 4' (supports +, -, *, /)."
+}
 func (t *Tool) DisplayName() string { return "Calculator" }
 
 func (t *Tool) Parameters() map[string]interface{} {

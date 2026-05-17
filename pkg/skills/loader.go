@@ -12,30 +12,30 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/user/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
 )
 
 // SkillFile represents a parsed SKILL.md file.
 type SkillFile struct {
 	// Frontmatter fields
-	Name         string            `yaml:"name"`
-	Description  string            `yaml:"description"`
-	License      string            `yaml:"license"`
-	Compatibility string           `yaml:"compatibility"`
-	Metadata     map[string]string `yaml:"metadata"`
-	AllowedTools string            `yaml:"allowed-tools"`
+	Name          string            `yaml:"name"`
+	Description   string            `yaml:"description"`
+	License       string            `yaml:"license"`
+	Compatibility string            `yaml:"compatibility"`
+	Metadata      map[string]string `yaml:"metadata"`
+	AllowedTools  string            `yaml:"allowed-tools"`
 
 	// Derived fields
-	Body      string // Markdown body after frontmatter
-	DirPath   string // Absolute path to the skill directory
-	FilePath  string // Absolute path to SKILL.md
+	Body     string // Markdown body after frontmatter
+	DirPath  string // Absolute path to the skill directory
+	FilePath string // Absolute path to SKILL.md
 }
 
 // FileSkill wraps a SkillFile to implement interfaces.Skill.
 type FileSkill struct {
-	file      *SkillFile
-	category  string
-	tools     []interfaces.Tool
+	file     *SkillFile
+	category string
+	tools    []interfaces.Tool
 }
 
 // NewFileSkill creates a FileSkill from a parsed SkillFile.
@@ -65,9 +65,9 @@ func WithSkillTools(tools ...interfaces.Tool) FileSkillOption {
 
 // --- interfaces.Skill implementation ---
 
-func (fs *FileSkill) Name() string               { return fs.file.Name }
-func (fs *FileSkill) Description() string         { return fs.file.Description }
-func (fs *FileSkill) Category() string            { return fs.category }
+func (fs *FileSkill) Name() string        { return fs.file.Name }
+func (fs *FileSkill) Description() string { return fs.file.Description }
+func (fs *FileSkill) Category() string    { return fs.category }
 
 // SystemPromptAugment returns the full SKILL.md body as system prompt augmentation.
 // This follows the agentskills progressive disclosure pattern:

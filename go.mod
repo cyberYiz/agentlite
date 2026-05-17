@@ -1,4 +1,4 @@
-module github.com/user/agent-sdk
+module github.com/cyberYiz/agent-sdk
 
 go 1.24.9
 

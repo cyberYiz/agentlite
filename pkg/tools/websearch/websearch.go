@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/user/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
 )
 
 // Tool implements interfaces.Tool for web search.
@@ -28,8 +28,10 @@ func New() *Tool {
 // Ensure Tool implements interfaces.Tool
 var _ interfaces.Tool = (*Tool)(nil)
 
-func (t *Tool) Name() string        { return "web_search" }
-func (t *Tool) Description() string { return "Search the web for current information. Returns top results with titles, URLs, and snippets." }
+func (t *Tool) Name() string { return "web_search" }
+func (t *Tool) Description() string {
+	return "Search the web for current information. Returns top results with titles, URLs, and snippets."
+}
 func (t *Tool) DisplayName() string { return "Web Search" }
 
 func (t *Tool) Parameters() map[string]interface{} {

@@ -7,14 +7,14 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/user/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
 )
 
 // Registry implements interfaces.SkillRegistry.
 type Registry struct {
-	mu       sync.RWMutex
-	skills   map[string]interfaces.Skill
-	active   map[string]bool // set of active skill names
+	mu     sync.RWMutex
+	skills map[string]interfaces.Skill
+	active map[string]bool // set of active skill names
 }
 
 // NewRegistry creates a new skill registry.

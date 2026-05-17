@@ -14,15 +14,15 @@ import (
 	"os"
 	"strings"
 
-	"github.com/user/agent-sdk/pkg/agent"
-	"github.com/user/agent-sdk/pkg/interfaces"
-	"github.com/user/agent-sdk/pkg/llm/openai"
-	"github.com/user/agent-sdk/pkg/memory"
-	"github.com/user/agent-sdk/pkg/skills"
-	"github.com/user/agent-sdk/pkg/skills/builtin"
-	"github.com/user/agent-sdk/pkg/tools"
-	"github.com/user/agent-sdk/pkg/tools/calculator"
-	"github.com/user/agent-sdk/pkg/tools/websearch"
+	"github.com/cyberYiz/agent-sdk/pkg/agent"
+	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agent-sdk/pkg/llm/openai"
+	"github.com/cyberYiz/agent-sdk/pkg/memory"
+	"github.com/cyberYiz/agent-sdk/pkg/skills"
+	"github.com/cyberYiz/agent-sdk/pkg/skills/builtin"
+	"github.com/cyberYiz/agent-sdk/pkg/tools"
+	"github.com/cyberYiz/agent-sdk/pkg/tools/calculator"
+	"github.com/cyberYiz/agent-sdk/pkg/tools/websearch"
 )
 
 func main() {
@@ -69,7 +69,7 @@ func main() {
 	// Map tool names to actual tools
 	toolMap := map[string]interfaces.Tool{
 		"web_search": websearch.New(),
-		"calculator":  calculator.New(),
+		"calculator": calculator.New(),
 	}
 
 	// Map skill names to actual skills

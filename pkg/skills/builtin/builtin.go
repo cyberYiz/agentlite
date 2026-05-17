@@ -4,7 +4,7 @@ package builtin
 import (
 	"context"
 
-	"github.com/user/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
 )
 
 // BaseSkill provides a convenient base for implementing skills.
@@ -38,13 +38,13 @@ func (b *BaseSkill) WithTools(tools ...interfaces.Tool) *BaseSkill {
 	return b
 }
 
-func (b *BaseSkill) Name() string                 { return b.name }
-func (b *BaseSkill) Description() string           { return b.description }
-func (b *BaseSkill) Category() string              { return b.category }
-func (b *BaseSkill) SystemPromptAugment() string   { return b.promptAug }
-func (b *BaseSkill) Tools() []interfaces.Tool       { return b.tools }
-func (b *BaseSkill) Init(_ context.Context) error   { return nil }
-func (b *BaseSkill) PreRun(_ context.Context, p string) (string, error) { return p, nil }
+func (b *BaseSkill) Name() string                                        { return b.name }
+func (b *BaseSkill) Description() string                                 { return b.description }
+func (b *BaseSkill) Category() string                                    { return b.category }
+func (b *BaseSkill) SystemPromptAugment() string                         { return b.promptAug }
+func (b *BaseSkill) Tools() []interfaces.Tool                            { return b.tools }
+func (b *BaseSkill) Init(_ context.Context) error                        { return nil }
+func (b *BaseSkill) PreRun(_ context.Context, p string) (string, error)  { return p, nil }
 func (b *BaseSkill) PostRun(_ context.Context, r string) (string, error) { return r, nil }
 
 // --- Built-in skill factories ---

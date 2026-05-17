@@ -5,7 +5,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/user/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
 )
 
 // ConversationBuffer implements interfaces.Memory with an in-memory message store.
