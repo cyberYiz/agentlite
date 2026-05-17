@@ -1,0 +1,58 @@
+# Task Definitions
+
+# Research task
+deep_research:
+  description: >
+    Conduct comprehensive research on {topic}. Include:
+    1. Background and context
+    2. Key developments and current state
+    3. Different perspectives and viewpoints
+    4. Future trends and predictions
+    5. Reliable sources and references
+    Make sure to search the web for the most current information.
+  expected_output: >
+    A well-structured research document with clear sections, citations,
+    and a summary of key findings. Format as markdown.
+  agent: research_assistant
+
+# Code review task
+code_review:
+  description: >
+    Review the following code for {language}:
+    {code}
+    Analyze it for:
+    1. Bugs and edge cases
+    2. Performance issues
+    3. Security vulnerabilities
+    4. Code style and best practices
+    5. Suggested improvements
+  expected_output: >
+    A structured code review with prioritized findings and
+    specific suggestions for improvement.
+  agent: code_reviewer
+
+# Data analysis task
+analyze_data:
+  description: >
+    Analyze the following data and provide insights:
+    {data}
+    Include:
+    1. Summary statistics
+    2. Trends and patterns
+    3. Notable outliers
+    4. Recommendations based on findings
+  expected_output: >
+    A comprehensive analysis report with clear sections, charts described
+    in text, and actionable recommendations.
+  agent: data_analyst
+
+# Writing task
+write_content:
+  description: >
+    Write {content_type} about {topic} for {audience}.
+    Requirements: {requirements}
+  expected_output: >
+    Polished, publication-ready content that meets all requirements.
+    Format as markdown without code fences.
+  agent: writer
+  output_file: "{topic}_{content_type}.md"
