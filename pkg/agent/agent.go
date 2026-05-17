@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
-	"github.com/cyberYiz/agent-sdk/pkg/skills"
+	"github.com/cyberYiz/agentlite/pkg/interfaces"
+	"github.com/cyberYiz/agentlite/pkg/skills"
 )
 
 // Agent orchestrates LLM calls, tool execution, memory, and skills.

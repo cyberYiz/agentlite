@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agentlite/pkg/interfaces"
 )
 
 const (

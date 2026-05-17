@@ -14,11 +14,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cyberYiz/agent-sdk/pkg/agent"
-	"github.com/cyberYiz/agent-sdk/pkg/llm/openai"
-	"github.com/cyberYiz/agent-sdk/pkg/memory"
-	"github.com/cyberYiz/agent-sdk/pkg/skills"
-	"github.com/cyberYiz/agent-sdk/pkg/skills/builtin"
+	"github.com/cyberYiz/agentlite/pkg/agent"
+	"github.com/cyberYiz/agentlite/pkg/llm/openai"
+	"github.com/cyberYiz/agentlite/pkg/memory"
+	"github.com/cyberYiz/agentlite/pkg/skills"
+	"github.com/cyberYiz/agentlite/pkg/skills/builtin"
 )
 
 func main() {

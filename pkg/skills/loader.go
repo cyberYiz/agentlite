@@ -12,7 +12,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agentlite/pkg/interfaces"
 )
 
 // SkillFile represents a parsed SKILL.md file.

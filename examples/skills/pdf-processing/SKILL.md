@@ -3,7 +3,7 @@ name: pdf-processing
 description: Extract PDF text and tables, fill forms, merge and split PDFs. Use when working with PDF files or when the user mentions PDFs, forms, or document extraction.
 license: MIT
 metadata:
-  author: agent-sdk
+  author: agentlite
   version: "1.0"
 ---
 

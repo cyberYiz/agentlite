@@ -4,7 +4,7 @@ package builtin
 import (
 	"context"
 
-	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agentlite/pkg/interfaces"
 )
 
 // BaseSkill provides a convenient base for implementing skills.

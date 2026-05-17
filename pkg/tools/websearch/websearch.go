@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cyberYiz/agent-sdk/pkg/interfaces"
+	"github.com/cyberYiz/agentlite/pkg/interfaces"
 )
 
 // Tool implements interfaces.Tool for web search.
@@ -99,7 +99,7 @@ func (t *Tool) searchDuckDuckGo(ctx context.Context, query string) ([]ddgResult,
 	if err != nil {
 		return nil, err
 	}
-	req.Header.Set("User-Agent", "agent-sdk/1.0")
+	req.Header.Set("User-Agent", "agentlite/1.0")
 
 	resp, err := t.httpClient.Do(req)
 	if err != nil {

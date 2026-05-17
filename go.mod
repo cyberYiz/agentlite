@@ -1,4 +1,4 @@
-module github.com/cyberYiz/agent-sdk
+module github.com/cyberYiz/agentlite
 
 go 1.24.9
 
